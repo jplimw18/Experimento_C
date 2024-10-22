@@ -23,9 +23,9 @@ float rand_float(void)
 //x1, x2, x3,..., b
 //w1, w2, 23, ...
 // y = x1*w1 + x2*w2 + x3*w3 + ... + b
-// b imporve the perfomance because add to distance betwwen the expected value
+// b-> bias: peso que aumenta a distancia entre o valor esperado, aumento a curva de "aprendizado"
 
-float cost(float w, float b)
+float cost(float w, float b) //Perceptron ou neurônio
 {
     float result = 0.0f;
     for(size_t i = 0; i < train_count; i++) {
