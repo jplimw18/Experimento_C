@@ -23,7 +23,7 @@ float rand_float(void)
 //x1, x2, x3,..., b
 //w1, w2, 23, ...
 // y = x1*w1 + x2*w2 + x3*w3 + ... + b
-// b-> bias: peso que aumenta a distancia entre o valor esperado, aumento a curva de "aprendizado"
+// b-> bias: peso que aumenta a distancia entre o valor esperado, possibilitando navegar par esquerda e direita na func sigmoide
 
 float cost(float w, float b) //Perceptron ou neurônio
 {
